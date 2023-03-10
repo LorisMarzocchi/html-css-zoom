@@ -8,7 +8,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 header{
-    
+    overflow-y: auto;
     position: fixed;
     top: 0;
     z-index: 99;
@@ -16,7 +16,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    height: 60px;
+    height: 70px;
     width: 100%;
     color: white;
     padding-inline: 20px;
@@ -63,13 +63,76 @@ main{
     left: 0;
     color: white;
 }
-/* footer */
-.footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 60px;
-    width: 100%;
+/* Nav End */
+.icon-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background-color: #222222;
+    padding-top: 20px;
     color: white;
+    position: relative;
     
 }
+nav{
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    align-self: baseline; 
+    text-align: center;
+    justify-content: space-between;
+
+} 
+.container-1{
+    display: flex;
+    align-items: center; 
+    text-align: center;
+    justify-content: space-between;
+    padding-inline: 25px;
+    flex: 0 1 20%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+}
+nav:hover{
+    cursor: pointer;
+}
+
+.container-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    width: calc(100% - 25px);
+}
+
+.stop-video{
+    flex-direction: row;
+    margin-left: 10px;
+}
+.end-meeting{
+    border: 1px solid gray;
+    background-color: gray;
+    color: red;
+    height: 80px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 0.8rem;
+}
+#green{
+    color: green;
+}
+/* display: inline-block;
+    color: white;
+    height: 60px;
+    padding-top: 25px;
+    width: 100%; */
